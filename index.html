@@ -6,30 +6,65 @@
     <meta name="description" content="Sarvesvar M S - Creative Video Editor Portfolio showcasing mashups, edits, and visual storytelling" />
     <meta name="theme-color" content="#0a0a0f" />
     <meta name="color-scheme" content="dark" />
-    
+    <meta name="author" content="Sarvesvar M S" />
+    <meta name="keywords" content="video editor, mashup editor, creative editor, visual storytelling, Sarvesvar M S" />
+    <link rel="canonical" href="https://sarves21.github.io/Hobbie/" />
+
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Sarvesvar M S | Creative Editor" />
     <meta property="og:description" content="Transforming stories into visual masterpieces" />
-    
+    <meta property="og:url" content="https://sarves21.github.io/Hobbie/" />
+    <meta property="og:site_name" content="Sarvesvar M S" />
+    <meta property="og:image" content="https://sarves21.github.io/Hobbie/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Sarvesvar M S - Creative Video Editor portfolio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sarvesvar M S | Creative Editor" />
+    <meta name="twitter:description" content="Transforming stories into visual masterpieces" />
+    <meta name="twitter:image" content="https://sarves21.github.io/Hobbie/og-image.jpg" />
+
     <title>Sarvesvar M S | Creative Editor</title>
-    
+
+    <!-- Favicon (inline SVG monogram, zero extra request) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23a855f7'/%3E%3Cstop offset='1' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230a0a0f'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='40' font-weight='700' text-anchor='middle' fill='url(%23g)'%3ES%3C/text%3E%3C/svg%3E" />
+    <link rel="apple-touch-icon" href="icon.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-    
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    
+
+    <!-- Warm the module so it parses right after CSS -->
+    <link rel="modulepreload" href="app.js" />
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Keyboard / screen-reader skip link -->
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Cinematic film-grain overlay -->
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+    <!-- Drifting aurora orb (joins the two body:: orbs) -->
+    <div class="orb-pink" aria-hidden="true"></div>
+
     <div id="tsparticles"></div>
-    
+
     <!-- Floating Navigation -->
-    <nav class="floating-nav" data-animate="fade-down" data-delay="300">
+    <nav class="floating-nav nav-intro">
       <div class="nav-logo">Sarvesvar</div>
       <ul class="nav-links">
         <li><a href="#hero">Home</a></li>
@@ -39,259 +74,221 @@
       </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="hero" class="hero-section">
-      <div class="hero-content" data-animate="fade-up" data-duration="1000">
-        <div class="hero-badge">Creative Editor</div>
-        <h1 class="hero-title">
-          <span class="gradient-text">Sarvesvar</span>
-          <span class="outline-text">M S</span>
-        </h1>
-        <p class="hero-subtitle">Transforming stories into visual masterpieces</p>
-        <div class="hero-cta">
-          <a href="#work" class="btn-primary">
-            <span>View My Work</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </a>
-          <a href="#contact" class="btn-secondary">Let's Connect</a>
-        </div>
-      </div>
-      <div class="scroll-indicator" data-animate="fade-up" data-delay="800">
-        <span>Scroll</span>
-        <div class="scroll-line"></div>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-      <div class="section-container">
-        <div class="about-content" data-animate="fade-right" data-duration="800">
-          <span class="section-label">About Me</span>
-          <h2 class="section-title">Passion Meets <span class="gradient-text">Creativity</span></h2>
-          <p class="about-text">
-            I love editing; it's more than just a hobby to me. It's a passion that
-            allows me to express my creativity and bring stories to life. Whether
-            it's through video editing, photo editing, or even text editing, I
-            find joy in refining and enhancing content to make it engaging and
-            impactful.
-          </p>
-          <p class="about-text">
-            Editing allows me to explore new techniques, experiment
-            with different styles, and constantly improve my skills. It's not just
-            about making things look better; it's about telling a compelling story
-            and connecting with audiences on a deeper level.
-          </p>
-        </div>
-        <div class="about-stats" data-animate="fade-left" data-duration="800" data-delay="200">
-          <div class="stat-card">
-            <span class="stat-number">10+</span>
-            <span class="stat-label">Creative Projects</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-number">∞</span>
-            <span class="stat-label">Passion Level</span>
+    <main id="main">
+      <!-- Hero Section -->
+      <header id="hero" class="hero-section">
+        <div class="hero-content" data-animate="fade-up" data-duration="1000">
+          <div class="hero-badge">Creative Editor</div>
+          <h1 class="hero-title">
+            <span class="gradient-text">Sarvesvar</span>
+            <span class="outline-text">M S</span>
+          </h1>
+          <p class="hero-subtitle">Transforming stories into visual masterpieces</p>
+          <div class="hero-cta">
+            <a href="#work" class="btn-primary">
+              <span>View My Work</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contact" class="btn-secondary">Let's Connect</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Quick Navigation -->
-    <section class="quick-nav-section">
-      <div class="section-container">
-        <h3 class="quick-nav-title" data-animate="fade-up">Jump to Edit</h3>
-        <div class="quick-nav-grid" data-animate="fade-up" data-delay="100">
-          <a href="#spiderman" class="quick-nav-item">Spider-Verse 🕷️</a>
-          <a href="#sarpatta" class="quick-nav-item">Sarpatta 🥊</a>
-          <a href="#marudhanayagam" class="quick-nav-item">Marudhanayagam 🪖</a>
-          <a href="#loki" class="quick-nav-item">Loki vs Vikram 🚨</a>
-          <a href="#lalaland" class="quick-nav-item">La La Land 💖</a>
-          <a href="#kamal" class="quick-nav-item">Kamal x Marvel 🎭</a>
-          <a href="#got" class="quick-nav-item">Game of Thrones 👑</a>
-          <a href="#drstrange" class="quick-nav-item">Dr. Strange 🕺</a>
-          <a href="#bladerunner" class="quick-nav-item">Blade Runner 🌸</a>
-          <a href="#tom" class="quick-nav-item">Tom as Batman 🦇</a>
+        <div class="scroll-indicator" data-animate="fade-up" data-delay="800">
+          <span>Scroll</span>
+          <div class="scroll-line"></div>
         </div>
-      </div>
-    </section>
-    <!-- Work Section -->
-    <section id="work" class="work-section">
-      <div class="section-container">
-        <span class="section-label" data-animate="fade-up">Portfolio</span>
-        <h2 class="section-title" data-animate="fade-up">Featured <span class="gradient-text">Edits</span></h2>
-        
-        <div class="cards-grid">
-          <article id="spiderman" class="card" data-animate="fade-up" data-duration="600">
-            <div class="card-glow"></div>
-            <div class="card-content">
-              <span class="card-tag">Animation x Music</span>
-              <h3 class="card-title">Spider-Verse 🕷️ x Maanaadu Theme ♾️</h3>
-              <div class="video-container">
-                <iframe
-                  src="https://drive.google.com/file/d/1oN4xKp6Iftay2SFdpAHqgFgGi_mGUJFH/preview"
-                  title="Spider-Verse x Maanaadu Theme Edit"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </div>
-          </article>
+      </header>
 
-          <article id="sarpatta" class="card" data-animate="fade-up" data-duration="600" data-delay="100">
-            <div class="card-glow"></div>
-            <div class="card-content">
-              <span class="card-tag">Boxing Crossover</span>
-              <h3 class="card-title">Sarpatta Parambarai 🥊 x Rocky 🥊</h3>
-              <div class="video-container">
-                <iframe
-                  src="https://drive.google.com/file/d/1aBPiiyT3as0aV8lt6eCcEZQQCDiK0ZjV/preview"
-                  title="Sarpatta Parambarai x Rocky Edit"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
-              </div>
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="section-container">
+          <div class="about-content" data-animate="fade-right" data-duration="800">
+            <span class="section-label">About Me</span>
+            <h2 class="section-title">Passion Meets <span class="gradient-text">Creativity</span></h2>
+            <p class="about-text">
+              I love editing; it's more than just a hobby to me. It's a passion that
+              allows me to express my creativity and bring stories to life. Whether
+              it's through video editing, photo editing, or even text editing, I
+              find joy in refining and enhancing content to make it engaging and
+              impactful.
+            </p>
+            <p class="about-text">
+              Editing allows me to explore new techniques, experiment
+              with different styles, and constantly improve my skills. It's not just
+              about making things look better; it's about telling a compelling story
+              and connecting with audiences on a deeper level.
+            </p>
+          </div>
+          <div class="about-stats" data-animate="fade-left" data-duration="800" data-delay="200">
+            <div class="stat-card">
+              <span class="stat-number" data-count="10" data-suffix="+">10+</span>
+              <span class="stat-label">Creative Projects</span>
             </div>
-          </article>
-
-          <article id="marudhanayagam" class="card" data-animate="fade-up" data-duration="600" data-delay="200">
-            <div class="card-glow"></div>
-            <div class="card-content">
-              <span class="card-tag">Epic Mashup</span>
-              <h3 class="card-title">Marudhanayagam x Porkanda Singam 🪖👑</h3>
-              <div class="video-container">
-                <iframe
-                  src="https://drive.google.com/file/d/1_itb8_o9jY8PlB8QlBKUXDgPvEZCcFbr/preview"
-                  title="Marudhanayagam x Porkanda Singam Edit"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
-              </div>
+            <div class="stat-card">
+              <span class="stat-number">&#8734;</span>
+              <span class="stat-label">Passion Level</span>
             </div>
-          </article>
-
-          <article id="loki" class="card" data-animate="fade-up" data-duration="600">
-            <div class="card-glow"></div>
-            <div class="card-content">
-              <span class="card-tag">Thriller Blend</span>
-              <h3 class="card-title">Loki vs Vikram 🚨</h3>
-              <div class="video-container">
-                <iframe
-                  src="https://drive.google.com/file/d/1GzRODxZhyalBul9nNIA3FGjqgQwpx61H/preview"
-                  title="Loki vs Vikram Edit"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </div>
-          </article>
-
-          <article id="lalaland" class="card" data-animate="fade-up" data-duration="600" data-delay="100">
-            <div class="card-glow"></div>
-            <div class="card-content">
-              <span class="card-tag">Romantic Vibe</span>
-              <h3 class="card-title">La La Land 💖 x Meghamkarukatha 🌨️</h3>
-              <div class="video-container">
-                <iframe
-                  src="https://drive.google.com/file/d/1_S0JSWXvguNRi4DKiHuAaYMn5IhOxCt9/preview"
-                  title="La La Land x Meghamkarukatha Edit"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </div>
-          </article>
-
-          <article id="kamal" class="card" data-animate="fade-up" data-duration="600" data-delay="200">
-            <div class="card-glow"></div>
-            <div class="card-content">
-              <span class="card-tag">Tribute Edit</span>
-              <h3 class="card-title">Kamal means Marvel 🎭✨</h3>
-              <div class="video-container">
-                <iframe
-                  src="https://drive.google.com/file/d/1JanlFprXWpVDKNi9P9bzCfEIMKrcaet6/preview"
-                  title="Kamal means Marvel Edit"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </div>
-          </article>
-
-          <article id="got" class="card" data-animate="fade-up" data-duration="600">
-            <div class="card-glow"></div>
-            <div class="card-content">
-              <span class="card-tag">Fantasy Epic</span>
-              <h3 class="card-title">Game of Thrones 👑</h3>
-              <div class="video-container">
-                <iframe
-                  src="https://drive.google.com/file/d/1AkEtKSJzE27j9Jbs3PR8XZ-iFb7CE-c9/preview"
-                  title="Game of Thrones Edit"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </div>
-          </article>
-
-          <article id="drstrange" class="card" data-animate="fade-up" data-duration="600" data-delay="100">
-            <div class="card-glow"></div>
-            <div class="card-content">
-              <span class="card-tag">Mystical Groove</span>
-              <h3 class="card-title">Dr. Strange Vibe 🕺💃</h3>
-              <div class="video-container">
-                <iframe
-                  src="https://drive.google.com/file/d/1Qz6pCqYnMdhBPNXEANm-1inQxJpKdUHr/preview"
-                  title="Dr. Strange Vibe Edit"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </div>
-          </article>
-
-          <article id="bladerunner" class="card" data-animate="fade-up" data-duration="600" data-delay="200">
-            <div class="card-glow"></div>
-            <div class="card-content">
-              <span class="card-tag">Sci-Fi Romance</span>
-              <h3 class="card-title">Blade Runner 2049 x Aganaga 🌸</h3>
-              <div class="video-container">
-                <iframe
-                  src="https://drive.google.com/file/d/1c2lV59uOF65bOfdMpk_b1gtT_ulOSDNl/preview"
-                  title="Blade Runner 2049 x Aganaga Edit"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </div>
-          </article>
-
-          <article id="tom" class="card" data-animate="fade-up" data-duration="600">
-            <div class="card-glow"></div>
-            <div class="card-content">
-              <span class="card-tag">Fun Edit</span>
-              <h3 class="card-title">Tom 🐱 as Batman 🦇</h3>
-              <div class="video-container">
-                <iframe 
-                  src="https://drive.google.com/file/d/1BMXZmHHqzGRZxtI5Xhbvst23Xkkes1EO/preview"
-                  title="Tom as Batman Edit"
-                  allow="autoplay; encrypted-media"
-                  allowfullscreen
-                  loading="lazy"
-                ></iframe>
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <!-- Skills / Tools Marquee -->
+      <section class="marquee-section" aria-label="What I do">
+        <div class="marquee">
+          <div class="marquee-track">
+            <span>Video Editing</span><span>&bull;</span><span>Mashup Edits</span><span>&bull;</span><span>Crossover Concepts</span><span>&bull;</span><span>Color Grading</span><span>&bull;</span><span>Music Sync</span><span>&bull;</span><span>Visual Storytelling</span><span>&bull;</span><span>Cinematic Cuts</span><span>&bull;</span><span>Transitions</span><span>&bull;</span><span>Video Editing</span><span>&bull;</span><span>Mashup Edits</span><span>&bull;</span><span>Crossover Concepts</span><span>&bull;</span><span>Color Grading</span><span>&bull;</span><span>Music Sync</span><span>&bull;</span><span>Visual Storytelling</span><span>&bull;</span><span>Cinematic Cuts</span><span>&bull;</span><span>Transitions</span><span>&bull;</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Quick Navigation -->
+      <section class="quick-nav-section">
+        <div class="section-container">
+          <h3 class="quick-nav-title" data-animate="fade-up">Jump to Edit</h3>
+          <div class="quick-nav-grid" data-animate="fade-up" data-delay="100">
+            <a href="#spiderman" class="quick-nav-item">Spider-Verse <span aria-hidden="true">&#128375;&#65039;</span></a>
+            <a href="#sarpatta" class="quick-nav-item">Sarpatta <span aria-hidden="true">&#129354;</span></a>
+            <a href="#marudhanayagam" class="quick-nav-item">Marudhanayagam <span aria-hidden="true">&#129526;</span></a>
+            <a href="#loki" class="quick-nav-item">Loki vs Vikram <span aria-hidden="true">&#128680;</span></a>
+            <a href="#lalaland" class="quick-nav-item">La La Land <span aria-hidden="true">&#128150;</span></a>
+            <a href="#kamal" class="quick-nav-item">Kamal x Marvel <span aria-hidden="true">&#127917;</span></a>
+            <a href="#got" class="quick-nav-item">Game of Thrones <span aria-hidden="true">&#128081;</span></a>
+            <a href="#drstrange" class="quick-nav-item">Dr. Strange <span aria-hidden="true">&#128375;</span></a>
+            <a href="#bladerunner" class="quick-nav-item">Blade Runner <span aria-hidden="true">&#127800;</span></a>
+            <a href="#tom" class="quick-nav-item">Tom as Batman <span aria-hidden="true">&#129415;</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Section -->
+      <section id="work" class="work-section">
+        <div class="section-container">
+          <span class="section-label" data-animate="fade-up">Portfolio</span>
+          <h2 class="section-title" data-animate="fade-up">Featured <span class="gradient-text">Edits</span></h2>
+
+          <div class="cards-grid">
+            <article id="spiderman" class="card" data-animate="fade-up" data-duration="600">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <span class="card-tag">Animation x Music</span>
+                <h3 class="card-title">Spider-Verse <span aria-hidden="true">&#128375;&#65039;</span> x Maanaadu Theme <span aria-hidden="true">&#9856;&#65039;</span></h3>
+                <div class="video-container video-facade" role="button" tabindex="0" data-src="https://drive.google.com/file/d/1oN4xKp6Iftay2SFdpAHqgFgGi_mGUJFH/preview" aria-label="Play video: Spider-Verse x Maanaadu Theme Edit">
+                  <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+                  <span class="facade-label">Watch Edit</span>
+                </div>
+              </div>
+            </article>
+
+            <article id="sarpatta" class="card" data-animate="fade-up" data-duration="600" data-delay="100">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <span class="card-tag">Boxing Crossover</span>
+                <h3 class="card-title">Sarpatta Parambarai <span aria-hidden="true">&#129354;</span> x Rocky <span aria-hidden="true">&#129354;</span></h3>
+                <div class="video-container video-facade" role="button" tabindex="0" data-src="https://drive.google.com/file/d/1aBPiiyT3as0aV8lt6eCcEZQQCDiK0ZjV/preview" aria-label="Play video: Sarpatta Parambarai x Rocky Edit">
+                  <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+                  <span class="facade-label">Watch Edit</span>
+                </div>
+              </div>
+            </article>
+
+            <article id="marudhanayagam" class="card" data-animate="fade-up" data-duration="600" data-delay="200">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <span class="card-tag">Epic Mashup</span>
+                <h3 class="card-title">Marudhanayagam x Porkanda Singam <span aria-hidden="true">&#129526;&#128081;</span></h3>
+                <div class="video-container video-facade" role="button" tabindex="0" data-src="https://drive.google.com/file/d/1_itb8_o9jY8PlB8QlBKUXDgPvEZCcFbr/preview" aria-label="Play video: Marudhanayagam x Porkanda Singam Edit">
+                  <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+                  <span class="facade-label">Watch Edit</span>
+                </div>
+              </div>
+            </article>
+
+            <article id="loki" class="card" data-animate="fade-up" data-duration="600">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <span class="card-tag">Thriller Blend</span>
+                <h3 class="card-title">Loki vs Vikram <span aria-hidden="true">&#128680;</span></h3>
+                <div class="video-container video-facade" role="button" tabindex="0" data-src="https://drive.google.com/file/d/1GzRODxZhyalBul9nNIA3FGjqgQwpx61H/preview" aria-label="Play video: Loki vs Vikram Edit">
+                  <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+                  <span class="facade-label">Watch Edit</span>
+                </div>
+              </div>
+            </article>
+
+            <article id="lalaland" class="card" data-animate="fade-up" data-duration="600" data-delay="100">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <span class="card-tag">Romantic Vibe</span>
+                <h3 class="card-title">La La Land <span aria-hidden="true">&#128150;</span> x Meghamkarukatha <span aria-hidden="true">&#127784;&#65039;</span></h3>
+                <div class="video-container video-facade" role="button" tabindex="0" data-src="https://drive.google.com/file/d/1_S0JSWXvguNRi4DKiHuAaYMn5IhOxCt9/preview" aria-label="Play video: La La Land x Meghamkarukatha Edit">
+                  <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+                  <span class="facade-label">Watch Edit</span>
+                </div>
+              </div>
+            </article>
+
+            <article id="kamal" class="card" data-animate="fade-up" data-duration="600" data-delay="200">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <span class="card-tag">Tribute Edit</span>
+                <h3 class="card-title">Kamal means Marvel <span aria-hidden="true">&#127917;&#10024;</span></h3>
+                <div class="video-container video-facade" role="button" tabindex="0" data-src="https://drive.google.com/file/d/1JanlFprXWpVDKNi9P9bzCfEIMKrcaet6/preview" aria-label="Play video: Kamal means Marvel Edit">
+                  <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+                  <span class="facade-label">Watch Edit</span>
+                </div>
+              </div>
+            </article>
+
+            <article id="got" class="card" data-animate="fade-up" data-duration="600">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <span class="card-tag">Fantasy Epic</span>
+                <h3 class="card-title">Game of Thrones <span aria-hidden="true">&#128081;</span></h3>
+                <div class="video-container video-facade" role="button" tabindex="0" data-src="https://drive.google.com/file/d/1AkEtKSJzE27j9Jbs3PR8XZ-iFb7CE-c9/preview" aria-label="Play video: Game of Thrones Edit">
+                  <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+                  <span class="facade-label">Watch Edit</span>
+                </div>
+              </div>
+            </article>
+
+            <article id="drstrange" class="card" data-animate="fade-up" data-duration="600" data-delay="100">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <span class="card-tag">Mystical Groove</span>
+                <h3 class="card-title">Dr. Strange Vibe <span aria-hidden="true">&#128375;&#128131;</span></h3>
+                <div class="video-container video-facade" role="button" tabindex="0" data-src="https://drive.google.com/file/d/1Qz6pCqYnMdhBPNXEANm-1inQxJpKdUHr/preview" aria-label="Play video: Dr. Strange Vibe Edit">
+                  <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+                  <span class="facade-label">Watch Edit</span>
+                </div>
+              </div>
+            </article>
+
+            <article id="bladerunner" class="card" data-animate="fade-up" data-duration="600" data-delay="200">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <span class="card-tag">Sci-Fi Romance</span>
+                <h3 class="card-title">Blade Runner 2049 x Aganaga <span aria-hidden="true">&#127800;</span></h3>
+                <div class="video-container video-facade" role="button" tabindex="0" data-src="https://drive.google.com/file/d/1c2lV59uOF65bOfdMpk_b1gtT_ulOSDNl/preview" aria-label="Play video: Blade Runner 2049 x Aganaga Edit">
+                  <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+                  <span class="facade-label">Watch Edit</span>
+                </div>
+              </div>
+            </article>
+
+            <article id="tom" class="card" data-animate="fade-up" data-duration="600">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <span class="card-tag">Fun Edit</span>
+                <h3 class="card-title">Tom <span aria-hidden="true">&#128049;</span> as Batman <span aria-hidden="true">&#129415;</span></h3>
+                <div class="video-container video-facade" role="button" tabindex="0" data-src="https://drive.google.com/file/d/1BMXZmHHqzGRZxtI5Xhbvst23Xkkes1EO/preview" aria-label="Play video: Tom as Batman Edit">
+                  <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30" fill="currentColor"><path d="M8 5v14l11-7z"></path></svg></span>
+                  <span class="facade-label">Watch Edit</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Contact/Footer Section -->
     <footer id="contact" class="footer-section">
@@ -299,7 +296,7 @@
         <span class="section-label">Get in Touch</span>
         <h2 class="footer-title">Let's Create <span class="gradient-text">Together</span></h2>
         <p class="footer-text">Want to collaborate or just say hi? Find me on socials!</p>
-        
+
         <div class="social-links">
           <a href="https://www.instagram.com/aragorn.ii/" class="social-link" aria-label="Follow me on Instagram" target="_blank" rel="noopener noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"><path d="M22 3H10c-3.86 0-7 3.14-7 7v12c0 3.86 3.14 7 7 7h12c3.86 0 7-3.14 7-7V10c0-3.86-3.14-7-7-7zm5 19c0 2.757-2.243 5-5 5H10c-2.757 0-5-2.243-5-5V10c0-2.757 2.243-5 5-5h12c2.757 0 5 2.243 5 5v12zM16 10c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zm0 10c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4zm8-10.5a1.5 1.5 0 1 1-3.001-.001A1.5 1.5 0 0 1 24 9.5z"/></svg>
@@ -312,15 +309,38 @@
           </a>
         </div>
       </div>
-      
+
       <div class="footer-bottom">
         <p>&copy; 2026 Sarvesvar M S. Crafted with passion.</p>
       </div>
     </footer>
 
-    <!-- Modern tsParticles (successor to particles.js) -->
-    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@3.3.0/tsparticles.slim.bundle.min.js"></script>
-    
+    <!-- Fullscreen video lightbox (only one player exists at a time) -->
+    <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Video player" aria-hidden="true">
+      <button class="video-modal__close" type="button" aria-label="Close video">&times;</button>
+      <div class="video-modal__frame"></div>
+    </div>
+
+    <!-- Structured data for SEO / identity -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sarvesvar M S",
+      "jobTitle": "Creative Video Editor",
+      "description": "Creative video editor specializing in mashups, edits, and visual storytelling.",
+      "url": "https://sarves21.github.io/Hobbie/",
+      "sameAs": [
+        "https://www.instagram.com/aragorn.ii/",
+        "https://github.com/Sarves21",
+        "https://www.linkedin.com/in/sarvesvar/"
+      ]
+    }
+    </script>
+
+    <!-- Modern tsParticles (successor to particles.js) - decorative, low priority -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@3.3.0/tsparticles.slim.bundle.min.js" defer fetchpriority="low"></script>
+
     <!-- Main Application Script -->
     <script type="module" src="app.js"></script>
   </body>

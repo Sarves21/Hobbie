@@ -1,0 +1,19 @@
+{
+  "name": "Sarvesvar M S | Creative Editor",
+  "short_name": "Sarvesvar",
+  "description": "Creative video editor portfolio - mashups, edits, and visual storytelling.",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
